@@ -1,6 +1,11 @@
+import StatsCard from "../components/StatsCard";
+import FashionCard from "../components/FashionCard";
+import fashionData from "../data/fashionData";
+
 export default function Dashboard() {
   return (
     <div>
+
       <h1 className="text-4xl font-bold">
         Dashboard
       </h1>
@@ -9,27 +14,49 @@ export default function Dashboard() {
         Selamat datang kembali 👋
       </p>
 
-      <div className="grid grid-cols-4 gap-5 mt-10">
-        <div className="bg-white rounded-xl shadow p-6">
-          <h2 className="text-gray-500">Total Fashion</h2>
-          <p className="text-3xl font-bold mt-2">156</p>
-        </div>
+      <div className="grid grid-cols-4 gap-5 mt-8">
 
-        <div className="bg-white rounded-xl shadow p-6">
-          <h2 className="text-gray-500">Wishlist</h2>
-          <p className="text-3xl font-bold mt-2">18</p>
-        </div>
+        <StatsCard
+          title="Total Fashion"
+          value="156"
+          color="text-pink-500"
+        />
 
-        <div className="bg-white rounded-xl shadow p-6">
-          <h2 className="text-gray-500">Outfit</h2>
-          <p className="text-3xl font-bold mt-2">42</p>
-        </div>
+        <StatsCard
+          title="Wishlist"
+          value="18"
+          color="text-blue-500"
+        />
 
-        <div className="bg-white rounded-xl shadow p-6">
-          <h2 className="text-gray-500">Favorite</h2>
-          <p className="text-3xl font-bold mt-2">27</p>
-        </div>
+        <StatsCard
+          title="Outfit"
+          value="42"
+          color="text-green-500"
+        />
+
+        <StatsCard
+          title="Favorite"
+          value="27"
+          color="text-red-500"
+        />
+
       </div>
+
+      <h2 className="text-2xl font-bold mt-12 mb-5">
+        Koleksi Terbaru
+      </h2>
+
+      <div className="grid grid-cols-4 gap-6">
+
+        {fashionData.map((fashion) => (
+          <FashionCard
+            key={fashion.id}
+            fashion={fashion}
+          />
+        ))}
+
+      </div>
+
     </div>
   );
 }
