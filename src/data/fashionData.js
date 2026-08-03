@@ -6,10 +6,8 @@ const fashionData = [
     color: "Black",
     brand: "Uniqlo",
     favorite: true,
-    image:
-      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600",
+    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600",
   },
-
   {
     id: 2,
     name: "Cargo Pants",
@@ -17,10 +15,8 @@ const fashionData = [
     color: "Cream",
     brand: "H&M",
     favorite: false,
-    image:
-      "https://images.unsplash.com/photo-1514996937319-344454492b37?w=600",
+    image: "https://images.unsplash.com/photo-1514996937319-344454492b37?w=600",
   },
-
   {
     id: 3,
     name: "Air Force",
@@ -28,10 +24,8 @@ const fashionData = [
     color: "White",
     brand: "Nike",
     favorite: true,
-    image:
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600",
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600",
   },
-
   {
     id: 4,
     name: "Denim Jacket",
@@ -39,8 +33,7 @@ const fashionData = [
     color: "Blue",
     brand: "Levis",
     favorite: false,
-    image:
-      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=600",
+    image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=600",
   },
 ];
 
